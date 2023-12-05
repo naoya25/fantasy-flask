@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block header %}ファンタジーの世界へようこそ{% endblock %}
+
+{% block content %}
+<h2 class="text-[1.5em]">Index Page</h2>
+<form action="/result" method="post">
+  <label for="career">経歴: </label>
+  <textarea id="career" class="w-[300px] border-2" name="career" required></textarea><br>
+  <label for="tastes">趣味: </label>
+  <textarea id="tastes" class="w-[300px] border-2" name="tastes" required></textarea><br>
+  <label for="character">性格: </label>
+  <textarea id="character" class="w-[300px] border-2" name="character" required></textarea><br>
+
+  <input type="submit" value="送信" />
+</form>
+<p class="text-red-500">※生成には5分ほどかかります</p>
+{% endblock %}

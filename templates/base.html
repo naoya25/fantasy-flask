@@ -9,12 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     {% block head %}{% endblock %}
   </head>
-  <body class="text-center">
+  <body class="text-center flex flex-col min-h-screen">
     <header>
       <h1 class="text-[2em]">{% block header %}Flask App{% endblock %}</h1>
     </header>
     <main>{% block content %}{% endblock %}</main>
-    <footer>
+    <footer class="mt-auto">
       <p>&copy; 2023/12 GeekSalon. All rights reserved.</p>
     </footer>
   </body>
